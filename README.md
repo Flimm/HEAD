@@ -312,7 +312,9 @@ Below are the link relations which are not recommended for use:
 <meta property="og:url" content="https://example.com/page.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Content Title">
-<meta property="og:image" content="https://example.com/image.jpg">
+<meta property="og:image" content="https://example.com/image.jpg"> <!-- cropped to size of ratio 1.91:1, Facebook recommends 1200x630 -->
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:description" content="Description Here">
 <meta property="og:site_name" content="Site Name">
 <meta property="og:locale" content="en_US">
@@ -349,9 +351,16 @@ Below are the link relations which are not recommended for use:
 <meta name="twitter:url" content="https://example.com/page.html">
 <meta name="twitter:title" content="Content Title">
 <meta name="twitter:description" content="Content description less than 200 characters">
-<meta name="twitter:image" content="https://example.com/image.jpg">
+<meta name="twitter:image" content="https://example.com/image.jpg"> <!-- cropped to a square -->
 <!-- More info: https://dev.twitter.com/cards/getting-started -->
 <!-- Validate: https://dev.twitter.com/docs/cards/validation/validator -->
+```
+
+If you would like to use Summary Card with Large Image instead, replace the first line with:
+
+``` html
+<meta name="twitter:card" content="summary_large_image">
+<!-- In this case, the image is cropped to size ratio 1.867:1 -->
 ```
 
 - [Twitter Cards: Getting Started Guide](https://dev.twitter.com/cards/getting-started)
