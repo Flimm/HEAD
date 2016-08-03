@@ -248,6 +248,7 @@ Below are the meta attributes which are not recommended for use:
 <link rel="next" href="https://example.com/atomFeed.php?page=4">
 <link rel="previous" href="https://example.com/atomFeed.php?page=2">
 <link rel="last" href="https://example.com/atomFeed.php?page=147">
+<!-- This is used for Flip Ahead Browsing among other things, see https://msdn.microsoft.com/library/jj883726(v=vs.85).aspx -->
 
 <!-- Used when using a 3rd party service to maintain a blog -->
 <link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
